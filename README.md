@@ -1,5 +1,14 @@
 # 2048
 2048 is a modest copy of original 2048 game made at 42 PARIS
+This copy was realised for the rush "wong_kar_wai" in 2 days, then uptdated by myself from now on
+This software hanlde :
+- High Scores
+- Screen resize
+- Signals (like ctrl + c for exemple)
+- "kind of" slips
+- Somes beautifull menu
+
+##Screenshoots :
 <img src="http://i.imgur.com/2VatKIt.png" align="left" width="50%"/>
 <img src="http://i.imgur.com/pJ8YQED.png" align="right" width="50%"/>
 <img src="http://i.imgur.com/95zMXMi.png" align="left" width="50%"/>
