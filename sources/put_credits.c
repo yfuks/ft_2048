@@ -6,7 +6,7 @@
 /*   By: yfuks <yfuks@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/03/02 02:51:50 by yfuks             #+#    #+#             */
-/*   Updated: 2015/03/02 05:10:43 by yfuks            ###   ########.fr       */
+/*   Updated: 2015/03/02 05:31:02 by yfuks            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,16 +90,16 @@ void		put_credits(void)
 	refresh();
 	play_music("music/lolita.mp3");
 	b = 0;
+	y = getmaxy(stdscr);
 	sleep(11);
-	while (b < 120)
+	while (b < 140)
 	{
-		y = getmaxy(stdscr);
-		x = getmaxx(stdscr) / 2;
 		clear();
+		x = getmaxx(stdscr) / 2;
 		i = 0;
 		while (i < 41)
 		{
-			if (y + i * 2 - b < getmaxy(stdscr) && y + i * 2 - b > 0)
+			if (y + i * 2 - b < y && y + i * 2 - b > 0)
 				mvprintw(y + i * 2 - b, x - ft_strlen(tab[i]) / 2, tab[i]);
 			i++;
 		}

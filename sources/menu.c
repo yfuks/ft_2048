@@ -6,7 +6,7 @@
 /*   By: yfuks <yfuks@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/03/02 00:08:52 by yfuks             #+#    #+#             */
-/*   Updated: 2015/03/02 05:12:04 by yfuks            ###   ########.fr       */
+/*   Updated: 2015/03/02 05:26:37 by yfuks            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,13 +113,15 @@ int			put_menu(void)
 	clear();
 	refresh();
 	c = 0;
+	i = 0;
 	y = getmaxy(stdscr) / 2 - 4;
 	x = getmaxx(stdscr) / 2 - 4;
-	i = 0;
 	put_tab(y, x, i);
 	while (c != 10 && c != 27)
 	{
 		c = getch();
+		y = getmaxy(stdscr) / 2 - 4;
+		x = getmaxx(stdscr) / 2 - 4;
 		if (c == KEY_DOWN && i < 2)
 			i++;
 		else if (c == KEY_UP && i > 0)

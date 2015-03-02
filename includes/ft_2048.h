@@ -6,7 +6,7 @@
 /*   By: yfuks <yfuks@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/27 23:11:31 by yfuks             #+#    #+#             */
-/*   Updated: 2015/03/02 04:10:54 by yfuks            ###   ########.fr       */
+/*   Updated: 2015/03/02 05:59:48 by yfuks            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 
 enum	e_const
 {
-	WIN_VALUE = 32
+	WIN_VALUE = 2048
 };
 typedef struct	s_square
 {
@@ -56,7 +56,7 @@ int				square_row_size(void);
 int				square_column_size(void);
 int				total_score(t_env *e);
 void			draw_win_square(t_env *e);
-void			draw_loose_square(t_env *e);
+void			draw_loose_square(t_env *e, int i);
 void			mouv_up_board(t_square board[4][4], t_env *e);
 void			mouv_down_board(t_square board[4][4], t_env *e);
 void			mouv_left_board(t_square board[4][4], t_env *e);

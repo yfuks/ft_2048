@@ -6,7 +6,7 @@
 /*   By: yfuks <yfuks@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/28 06:53:49 by yfuks             #+#    #+#             */
-/*   Updated: 2015/03/02 05:23:54 by yfuks            ###   ########.fr       */
+/*   Updated: 2015/03/02 05:57:00 by yfuks            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,24 +82,31 @@ static int		draw_win(t_env *e)
 static int		draw_loose(t_env *e)
 {
 	int		key;
+	int		i;
 
 	key = 0;
 	keypad(stdscr, TRUE);
-	draw_loose_square(e);
+	i = 0;
+	draw_loose_square(e, i);
 	while (key != 10)
 	{
 		key = getch();
-		if (key == 114)
+		if (key == KEY_LEFT && i > 0)
+			i--;
+		else if (key == KEY_RIGHT && i < 2)
+			i++;
+		else if (key == 10 && i == 0)
 		{
 			clear();
 			init_board(e);
 			return (1);
 		}
-		if (key == 's')
+		else if (key == 10 && i == 2)
 		{
-			save_best_score(tota_score(e), e->player_name);
+			save_best_score(total_score(e), e->player_name);
 			return (0);
 		}
+		draw_loose_square(e, i);
 	}
 	return (0);
 }
