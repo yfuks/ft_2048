@@ -1,6 +1,7 @@
 # 2048
 2048 is a modest copy of original 2048 game made at 42 PARIS
-This copy was realised for the rush "wong_kar_wai" in 2 days, then uptdated by myself from now on
+
+This copy was realised for the rush "wong_kar_wai" in 2 days with the ncurses library, then uptdated by myself from now on
 This software hanlde :
 - High Scores
 - Screen resize
