@@ -8,7 +8,7 @@ This software can handle :
 - Screen resize
 - Signals (like ctrl + c for exemple)
 - "kind of" slips
-- Somes beautifull menu
+- Somes beautiful menus
 
 ##Screenshoots :
 <img src="http://i.imgur.com/2VatKIt.png" align="left" width="50%"/>
