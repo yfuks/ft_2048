@@ -3,7 +3,7 @@
 
 This copy was realised for the rush "wong_kar_wai" in 2 days with the ncurses library, then uptdated by myself from now on
 
-This software hanlde :
+This software can handle :
 - High Scores
 - Screen resize
 - Signals (like ctrl + c for exemple)
