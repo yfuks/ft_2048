@@ -6,7 +6,7 @@
 /*   By: yfuks <yfuks@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/28 06:53:49 by yfuks             #+#    #+#             */
-/*   Updated: 2015/03/01 23:04:40 by yfuks            ###   ########.fr       */
+/*   Updated: 2015/03/02 05:23:54 by yfuks            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,7 @@ static int		draw_win(t_env *e)
 			return (0);
 		else if (c == 's' && total_score(e) > e->best_score)
 		{
-			save_best_score(total_score(e));
+			save_best_score(total_score(e), e->player_name);
 			e->best_score = total_score(e);
 			return (1);
 		}
@@ -94,6 +94,11 @@ static int		draw_loose(t_env *e)
 			clear();
 			init_board(e);
 			return (1);
+		}
+		if (key == 's')
+		{
+			save_best_score(tota_score(e), e->player_name);
+			return (0);
 		}
 	}
 	return (0);

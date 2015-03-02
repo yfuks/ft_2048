@@ -6,7 +6,7 @@
 /*   By: yfuks <yfuks@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/03/01 22:46:30 by yfuks             #+#    #+#             */
-/*   Updated: 2015/03/01 22:58:49 by yfuks            ###   ########.fr       */
+/*   Updated: 2015/03/02 05:22:30 by yfuks            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	draw_loose_square(t_env *e)
 	mvhline(y + 1, x - 5, ' ', 55);
 	mvhline(y + 2, x - 5, ' ', 55);
 	mvhline(y + 3, x - 5, ' ', 55);
-	mvprintw(y, x, "You lose, press   enter to quit   r to reset");
+	mvprintw(y, x, "You lose, press enter to quit r to reset or s to save");
 	mvprintw(y + 2, x + 24, "final score : %d", total_score(e));
 	attroff(COLOR_PAIR(2));
 }

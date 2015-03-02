@@ -6,7 +6,7 @@
 /*   By: yfuks <yfuks@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/27 23:09:19 by yfuks             #+#    #+#             */
-/*   Updated: 2015/03/01 23:13:49 by yfuks            ###   ########.fr       */
+/*   Updated: 2015/03/02 01:43:36 by yfuks            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,9 +52,11 @@ int			main(void)
 	int		a;
 	t_env	e;
 
-	if (!init_main(&e))
+	if (!init_main(&e) || !put_menu())
 		return (0);
-	while ((a = getch()) != 27 && !is_too_small())
+	get_player_name(&e);
+	a = -20;
+	while ((a == -20 || (a = getch()) != 27) && !is_too_small())
 	{
 		e.mouv = 0;
 		handle_key(a, &e);
@@ -69,6 +71,7 @@ int			main(void)
 			break ;
 		draw_all(&e);
 		refresh();
+		a = 0;
 	}
 	if (is_too_small())
 		ft_putendl_fd("Window too small, exiting", 2);
