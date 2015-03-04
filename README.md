@@ -10,9 +10,7 @@ This software can handle :
 - "kind of" slips
 - Somes beautiful menus
 
-.. code:: bash
-
- $ pip install curses-2048
+ ``$ pip install curses-2048``
 
 ##Screenshoots :
 <img src="http://i.imgur.com/2VatKIt.png" align="left" width="50%"/>
