@@ -6,7 +6,7 @@
 /*   By: yfuks <yfuks@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/28 04:54:55 by yfuks             #+#    #+#             */
-/*   Updated: 2015/03/01 19:03:59 by yfuks            ###   ########.fr       */
+/*   Updated: 2015/03/04 17:27:48 by yfuks            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static void	draw_square(int x, int y, t_env *e, int value)
 	int		row;
 	int		column;
 
-	attron(COLOR_PAIR(value));
+	attron(COLOR_PAIR(what_power(value)));
 	row = y * e->square_length + 4;
 	while (row < (y + 1) * e->square_length + 3)
 	{

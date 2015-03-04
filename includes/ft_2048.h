@@ -6,7 +6,7 @@
 /*   By: yfuks <yfuks@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/27 23:11:31 by yfuks             #+#    #+#             */
-/*   Updated: 2015/03/02 05:59:48 by yfuks            ###   ########.fr       */
+/*   Updated: 2015/03/04 17:28:33 by yfuks            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,7 @@ void			init_board(t_env *e);
 int				size_of_number(int num);
 void			set_colors(void);
 int				power(int number, int power);
+int				what_power(int nbr);
 int				square_row_size(void);
 int				square_column_size(void);
 int				total_score(t_env *e);

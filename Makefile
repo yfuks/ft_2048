@@ -6,7 +6,7 @@
 #    By: yfuks <yfuks@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/02/27 23:02:19 by yfuks             #+#    #+#              #
-#    Updated: 2015/03/02 02:52:02 by yfuks            ###   ########.fr        #
+#    Updated: 2015/03/04 17:28:06 by yfuks            ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -39,7 +39,8 @@ SRC =	sources/main.c 				\
 		sources/menu.c				\
 		sources/get_player_name.c	\
 		sources/get_score.c			\
-		sources/put_credits.c
+		sources/put_credits.c		\
+		sources/what_power.c
 
 HEAD = -I ./includes
 

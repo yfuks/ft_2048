@@ -6,7 +6,7 @@
 /*   By: yfuks <yfuks@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/03/01 21:52:31 by yfuks             #+#    #+#             */
-/*   Updated: 2015/03/01 23:22:40 by yfuks            ###   ########.fr       */
+/*   Updated: 2015/03/04 17:45:30 by yfuks            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	draw_win_square(t_env *e)
 
 	y = getmaxy(stdscr) / 2;
 	x = getmaxx(stdscr) / 2 - 17;
-	attron(COLOR_PAIR(2));
+	attron(COLOR_PAIR(16));
 	mvhline(y - 1, x - 10, ' ', 55);
 	mvhline(y, x - 10, ' ', 55);
 	mvhline(y + 1, x - 10, ' ', 55);
@@ -29,5 +29,5 @@ void	draw_win_square(t_env *e)
 	mvprintw(y + 2, x - 5, "Press c to continue   q to quit");
 	if (total_score(e) > e->best_score)
 		mvprintw(y + 2, x + 29, "s to save");
-	attroff(COLOR_PAIR(2));
+	attroff(COLOR_PAIR(16));
 }

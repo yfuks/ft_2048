@@ -6,7 +6,7 @@
 /*   By: yfuks <yfuks@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/27 23:09:19 by yfuks             #+#    #+#             */
-/*   Updated: 2015/03/02 05:36:13 by yfuks            ###   ########.fr       */
+/*   Updated: 2015/03/04 18:39:27 by yfuks            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ static int	is_too_small(void)
 
 static int	init_main(t_env *e)
 {
+	e->player_name = NULL;
 	if (is_power2() == 1)
 		return (0);
 	initscr();
@@ -52,26 +53,32 @@ int			main(void)
 	int		a;
 	t_env	e;
 
-	if (!init_main(&e) || !put_menu())
+	if (!init_main(&e))
 		return (0);
-	get_player_name(&e);
 	a = -20;
-	while ((a == -20 || (a = getch()) != 27) && !is_too_small())
+	while (put_menu())
 	{
-		e.mouv = 0;
-		handle_key(a, &e);
-		reset_changed(e.board);
-		if ((a == KEY_UP || a == KEY_DOWN || a == KEY_LEFT || a == KEY_RIGHT)
-			&& e.mouv == 1)
-		{
-			clear();
-			add_rand_nb(e.board);
-		}
-		if (is_end(&e) == 1)
-			break ;
+		init_board(&e);
+		get_player_name(&e);
+		clear();
 		draw_all(&e);
-		refresh();
-		a = 0;
+		while ((a == -20 || (a = getch()) != 27) && !is_too_small())
+		{
+			e.mouv = 0;
+			handle_key(a, &e);
+			reset_changed(e.board);
+			if ((a == KEY_UP || a == KEY_DOWN || a == KEY_LEFT || a == KEY_RIGHT)
+				&& e.mouv == 1)
+			{
+				clear();
+				add_rand_nb(e.board);
+			}
+			if (is_end(&e) == 1)
+				break ;
+			draw_all(&e);
+			refresh();
+			a = 0;
+		}
 	}
 	if (is_too_small())
 		ft_putendl_fd("Window too small, exiting", 2);
