@@ -9,6 +9,7 @@ This software can handle :
 - Signals (like ctrl + c for exemple)
 - "kind of" slips
 - Somes beautiful menus
+- An easter egg
 
 ##Launch (only works on UNIX system)
 
