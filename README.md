@@ -10,7 +10,11 @@ This software can handle :
 - "kind of" slips
 - Somes beautiful menus
 
- ``$ pip install curses-2048``
+##Compile
+
+Git clone this repository and simply type :
+
+ ``$ make``
 
 ##Screenshoots :
 <img src="http://i.imgur.com/2VatKIt.png" align="left" width="50%"/>
