@@ -12,7 +12,7 @@ This software can handle :
 
 ##Compile
 
-Git clone this repository and simply type :
+Git clone this repository and simply type (only works on UNIX system):
 ````
  $ make
 ````
