@@ -13,9 +13,9 @@ This software can handle :
 ##Compile
 
 Git clone this repository and simply type :
-
- ``$ make``
-
+````
+ $ make
+````
 ##Screenshoots :
 <img src="http://i.imgur.com/2VatKIt.png" align="left" width="50%"/>
 <img src="http://i.imgur.com/pJ8YQED.png" align="right" width="50%"/>
