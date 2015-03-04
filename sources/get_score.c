@@ -26,6 +26,7 @@ static int	nb_lines_files(void)
 		free(line);
 		i++;
 	}
+	close(fd);
 	return (i);
 }
 
