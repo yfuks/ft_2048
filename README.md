@@ -13,7 +13,7 @@ This software handle :
 
 ##Launch (only works on UNIX system)
 
-Git clone this repository then go to the created directory and type :
+Git clone this repository then go to the created directory and type (in your terminal):
 ````
  $ make
 ````
