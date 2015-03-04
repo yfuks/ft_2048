@@ -3,7 +3,7 @@ ft_2048 is a modest copy of original 2048 game. It was made at 42 scool PARIS by
 
 This copy was realised for the rush "wong_kar_wai" in 2 days with the ncurses library, then uptdated by myself from now on
 
-This software can handle :
+This software handle :
 - High Scores
 - Screen resize
 - Signals (like ctrl + c for exemple)
