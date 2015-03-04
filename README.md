@@ -10,9 +10,9 @@ This software can handle :
 - "kind of" slips
 - Somes beautiful menus
 
-##Launch
+##Launch (only works on UNIX system)
 
-Git clone this repository and type (only works on UNIX system) :
+Git clone this repository and type :
 ````
  $ make
 ````
@@ -27,4 +27,3 @@ Then
 <img src="http://i.imgur.com/95zMXMi.png" align="left" width="50%"/>
 <img src="http://i.imgur.com/klEPHG5.png" align="right" width="50%"/>
 <img src="http://i.imgur.com/22JyWNw.png"/>
-Recode 2048 game with ncurses
