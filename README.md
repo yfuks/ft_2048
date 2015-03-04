@@ -1,7 +1,7 @@
 # ft_2048
 ft_2048 is a modest copy of original 2048 game. It was made at 42 scool PARIS by a first year student (me)
 
-This copy was realised for the rush "wong_kar_wai" in 2 days with the ncurses library, then uptdated by myself from now on
+This copy was realised for the rush "wong_kar_wai" in 2 days with the ncurses library, then updated by myself from now on
 
 This software handle :
 - High Scores
