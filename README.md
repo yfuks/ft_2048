@@ -10,12 +10,17 @@ This software can handle :
 - "kind of" slips
 - Somes beautiful menus
 
-##Compile
+##Launch
 
-Git clone this repository and simply type (only works on UNIX system) :
+Git clone this repository and type (only works on UNIX system) :
 ````
  $ make
 ````
+Then
+````
+ $ ./game_2048
+````
+
 ##Screenshoots :
 <img src="http://i.imgur.com/2VatKIt.png" align="left" width="50%"/>
 <img src="http://i.imgur.com/pJ8YQED.png" align="right" width="50%"/>
