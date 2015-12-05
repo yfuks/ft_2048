@@ -23,8 +23,8 @@ Then
 ````
 
 ##Screenshoots :
-<img src="http://i.imgur.com/2VatKIt.png" align="left" width="50%"/>
-<img src="http://i.imgur.com/pJ8YQED.png" align="right" width="50%"/>
-<img src="http://i.imgur.com/95zMXMi.png" align="left" width="50%"/>
-<img src="http://i.imgur.com/klEPHG5.png" align="right" width="50%"/>
+<img src="http://i.imgur.com/2VatKIt.png" width="50%"/>
+<img src="http://i.imgur.com/pJ8YQED.png" width="49%"/>
+<img src="http://i.imgur.com/95zMXMi.png" width="50%"/>
+<img src="http://i.imgur.com/klEPHG5.png" width="49%"/>
 <img src="http://i.imgur.com/22JyWNw.png"/>
